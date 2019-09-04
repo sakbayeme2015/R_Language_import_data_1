@@ -1,0 +1,39 @@
+> read.csv("states.csv", stringsAsFactors = FALSE) 
+
+> path <- file.path("~", "datasets", "states.csv") 
+ "~/datasets/states.csv" 
+
+> read.csv(path, stringsAsFactors = FALS 
+
+read.delim()
+read.table() 
+
+> read.delim("states.txt", stringsAsFactors = FALSE) or 
+> read.delim("states.txt", header = TRUE, sep = "\t", stringsAsFactors = FALSE) 
+ 
+ 
+exotic file
+
+> read.table("states.txt", header = TRUE, sep = "/", stringsAsFactors = FALSE) 
+                                          sep = "\t", 
+
+
+> read.csv(file, header = TRUE, sep = ",", quote = "\"", dec = ".", fill = TRUE, comment.char = "", ...) 
+ 
+
+> read.csv2(file, header = TRUE, sep = ";", quote = "\"", dec = ",", fill = TRUE, comment.char = "", ...) 
+
+
+> read.delim(file, header = TRUE, sep = "\t", quote = "\"", dec = ".", fill = TRUE, comment.char = "", ...)
+
+
+> read.delim2(file, header = TRUE, sep = "\t", quote = "\"", dec = ",", fill = TRUE, comment.char = "", ...)
+
+
+
+
+
+
+
+
+                   

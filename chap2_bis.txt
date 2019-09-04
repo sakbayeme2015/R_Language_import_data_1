@@ -1,0 +1,33 @@
+> install.packages('readr') 
+> library(readr) 
+
+> read.csv("states.csv", stringsAsFactors = FALSE) 
+
+utils >> read.table() 
+         read.csv() 
+         read.delim() 
+
+readr >> read_delim() 
+readr >> read_csv() 
+readr >> read_tsv() 
+
+> read_csv('states.csv') 
+> read_tsv('states.txt') 
+
+> read_delim('states2.txt', delim = "/") 
+
+> read_delim('states2.txt', delim = "/", col_names = c("states", "city", "pop", "area")) 
+
+> read_delim('states2.txt', delim = "/", col_types = "ccdd") 
+
+> read_delim('states2.txt', delim = "/", skip = 2, n_max = 3) 
+
+> read_delim('states2.txt', delim = "/", col_names = c("states", "city", "pop", "area"), skip = 2, n_max = 3) 
+
+
+> install.packages('data.table') 
+> library(data.table) 
+
+> fread("states.csv") 
+> potatoes <- read_delim('potatoes.txt', delim = '\t', skip = 20, n_max = 30, progress = show_progress(), col_names = properties)  
+

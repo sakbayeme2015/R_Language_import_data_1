@@ -1,0 +1,38 @@
+excel_sheets() list different sheets
+read_excel()   actually import data into R 
+
+> install.packages('readxl') 
+> library(readxl) 
+
+> dir() 
+> excel_sheets("cities.xlsx") 
+
+> read_excel("cities.xlsx") 
+
+> read_excel("cities.xlsx", sheet = 2) 
+> read_excel("cities.xlsx", sheet = "year_2000") 
+
+> read_excel(path, sheet = 1, 
+	     col_names = TRUE, 
+             col_types = NULL, 
+             skip = 0) 
+
+> read_ecel('cities.xlsx', col_types = c("text", "text")) 
+
+> read_ecel('cities.xlsx', col_types = c("text", "blank")) 
+
+> read_ecel('cities.xlsx', col_names = c("Capital", "Population"), skip =2)
+ 
+
+                     ------------> read.table() > 15 arguments! 
+gdata  Perl       read.csv() 
+XLS  -------> CSV --------> R data frame 
+ 
+> install.packages('gdata') 
+> library(gdata) 
+
+> read.xls('cities.xls') 
+> read.xls('cities.xls', sheet = "year_2000") 
+
+>  head(data, n = 25) > print 25 elements
+
